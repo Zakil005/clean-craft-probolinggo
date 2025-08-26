@@ -1,0 +1,1424 @@
+/* RESET DAN FONT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* TOMBOL UMUM */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+.header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em; 
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.love-icon-container {
+    position: relative;
+    color: #555;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.love-icon-container:hover {
+    color: #ff6347;
+}
+
+.love-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #ff6347;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+/* === Tombol Konsultasi Berbentuk Pil === */
+.btn-konsultasi {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px; /* Ini yang membuat bentuknya menjadi pil */
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    animation: buttonAppear 0.5s ease-out backwards;
+}
+
+.btn-konsultasi:hover {
+    background-color: #45a049;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+}
+
+/* HERO SECTION (untuk halaman beranda) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: #f9f9f9;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.hero-buttons .btn {
+    margin-right: 15px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* BAGIAN UMUM */
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title-wrapper h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-header p {
+    font-size: 1.1em;
+    color: #777;
+    max-width: 650px; 
+    margin: 0 auto;
+}
+
+/* LAYANAN SECTION (untuk halaman layanan) */
+.services-section {
+    padding: 80px 20px;
+    background: #fcfcfc;
+}
+
+/* FILTER LAYANAN */
+.services-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.filter-btn {
+    text-decoration: none;
+    color: #555;
+    background-color: #f0f0f0;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.filter-btn:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.filter-btn.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.filter-btn.active:hover {
+    background-color: #555;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.btn-love {
+    background: #fff;
+    color: #999;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-love:hover {
+    color: #ff6347;
+}
+
+.description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.card-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px 10px;
+    margin-bottom: 25px;
+}
+
+.card-details p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.card-details .price,
+.card-details .duration {
+    font-weight: 600;
+    color: #333;
+    text-align: right;
+}
+
+.card-details .duration i {
+    color: #4CAF50;
+    margin-right: 5px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 0;
+    font-weight: 500;
+    text-align: center;
+    margin-top: auto;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+.service-tag {
+    text-align: center;
+    color: #999;
+    font-size: 0.85em;
+    margin-top: 15px;
+}
+
+.btn-love.loved {
+    color: #ff6347;
+}
+
+/* MODAL POP-UP */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-close-btn:hover {
+    color: #333;
+}
+
+/* GAYA MODAL FAVORIT */
+.modal-body .favorite-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.modal-body .favorite-item:last-child {
+    border-bottom: none;
+}
+
+.modal-body .favorite-item .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.modal-body .favorite-item h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.modal-body .favorite-item .item-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.modal-body .favorite-item .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body .favorite-item .price {
+    color: #333;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.modal-body .favorite-item .btn-pesan {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.modal-body .favorite-item .btn-pesan:hover {
+    background-color: #45a049;
+}
+
+.modal-body .favorite-item .btn-love-modal {
+    background: none;
+    border: none;
+    color: #ff6347;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* GAYA MODAL FORMULIR */
+#order-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+#order-form input, #order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#order-form textarea {
+    resize: none;
+    background-color: #f8f8f8;
+}
+
+#order-form button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#confirmation-message {
+    text-align: center;
+}
+
+#unique-code {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #4CAF50;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    margin: 15px 0;
+}
+
+#whatsapp-link {
+    width: 100%;
+}
+
+/* GAYA FOOTER */
+.footer {
+    background: #222;
+    color: #bbb;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.footer-column p, .footer-column li {
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li:before {
+    content: "•";
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.footer-column .social-icons a {
+    color: #bbb;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-column .social-icons a:hover .fa-instagram { color: #E1306C; }
+.footer-column .social-icons a:hover .fa-tiktok { color: #000000; }
+.footer-column .social-icons a:hover .fa-whatsapp { color: #25D366; }
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* GAYA UNTUK INFORMASI PENTING */
+.important-info {
+    padding: 50px 20px;
+    background: #444;
+    text-align: center;
+}
+
+.info-header h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.info-column {
+    text-align: left;
+    max-width: 350px;
+}
+
+.info-column h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.info-column p, .info-column ul {
+    color: #fff;
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+.info-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-column ul li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.info-column ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* GAYA UNTUK HALAMAN TENTANG KAMI */
+.about-section {
+    padding: 80px 20px;
+    background: #fcfcfc;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-header h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-header p {
+    font-size: 1.1em;
+    color: #777;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+/* GAYA UNTUK PANDUAN PERAWATAN SEPATU */
+.tips-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tips-header h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tips-usp-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tips-usp-item {
+    text-align: center;
+    max-width: 150px;
+    color: #555;
+}
+
+.tips-usp-item i {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.tips-usp-item p {
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.tips-accordion-container {
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.tips-accordion-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.tips-accordion-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #f8f8f8;
+}
+
+.accordion-header h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 15px;
+    flex-grow: 1;
+}
+
+.accordion-header .fa-check-circle {
+    color: #4CAF50;
+    font-size: 1.5em;
+}
+
+.accordion-header .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.tips-accordion-item.open .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.tips-accordion-item.open .accordion-content {
+    max-height: 500px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.accordion-content p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.accordion-content .note {
+    font-style: italic;
+    font-size: 0.85em;
+    color: #888;
+}
+
+/* GAYA UNTUK BAGIAN TIPS AHLI */
+.tips-ahli-section {
+    padding: 60px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.tips-ahli-section h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.tips-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tips-item {
+    background: #444;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.tips-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tips-item ul {
+    list-style: none;
+    font-size: 0.9em;
+}
+
+.tips-item li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.tips-item li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* GAYA MODAL KONFIRMASI */
+#confirmation-message {
+    text-align: center;
+}
+
+#confirmation-message h4 {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#confirmation-message p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#unique-code {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #4CAF50;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto;
+}
+
+#whatsapp-link {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+#whatsapp-link:hover {
+    background-color: #555;
+}
+
+
+
+
+
+/**27 agustus/
+/* ===== MEDIA QUERIES TAMBAHAN UNTUK RESPONSIF ===== */
+/* Tambahkan ini di bagian paling bawah CSS yang sudah ada */
+
+/* ===== MOBILE / HP (Extra Small devices) - 0px to 575px ===== */
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  /* Header adjustments untuk mobile */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .logo {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .header-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .btn-konsultasi {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Hero section untuk mobile */
+  .hero-section {
+    flex-direction: column;
+    min-height: auto;
+    padding: 20px 10px;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    transform: translateY(0);
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .pre-header {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+    margin-top: 5px;
+  }
+  
+  .hero-content .description {
+    font-size: 0.9rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+  
+  .hero-image {
+    min-width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  /* Why us section */
+  .why-us {
+    padding: 40px 10px;
+    margin-top: 0;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8em;
+  }
+  
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .feature-card {
+    padding: 20px;
+  }
+  
+  /* CTA section */
+  .cta-section {
+    padding: 40px 10px;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.6em;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 40px 10px 20px;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Modal adjustments */
+  .modal-content {
+    width: 95%;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .modal-header {
+    padding: 10px 0;
+  }
+  
+  .modal-header h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* ===== MOBILE LANDSCAPE / HP BESAR - 576px to 767px ===== */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .logo {
+    font-size: 2.2em;
+  }
+  
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    margin-right: 0;
+  }
+  
+  .hero-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 25px;
+  }
+  
+  .hero-content {
+    transform: translateY(-20px);
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .hero-image {
+    max-width: 280px;
+  }
+  
+  .why-us {
+    padding: 50px 15px;
+  }
+  
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .cta-section {
+    padding: 50px 15px;
+  }
+  
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== TABLET - 768px to 991px ===== */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    padding: 0 20px;
+  }
+  
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 2.3em;
+  }
+  
+  .nav-links {
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .header-actions {
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .hero-section {
+    flex-direction: row;
+    padding: 35px 20px;
+    gap: 30px;
+  }
+  
+  .hero-content {
+    transform: translateY(-30px);
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    max-width: 320px;
+  }
+  
+  .why-us {
+    padding: 60px 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2em;
+  }
+  
+  .why-us-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  
+  .cta-section {
+    padding: 60px 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== DESKTOP KECIL - 992px to 1199px ===== */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .logo {
+    font-size: 2.4em;
+  }
+  
+  .nav-links li {
+    margin-right: 22px;
+  }
+  
+  .hero-section {
+    padding: 40px 20px;
+    gap: 35px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-image {
+    max-width: 350px;
+  }
+  
+  .why-us {
+    padding: 70px 20px;
+  }
+  
+  .why-us-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  
+  .cta-section {
+    padding: 70px 20px;
+  }
+  
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ===== DESKTOP BESAR - 1200px ke atas ===== */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+  
+  /* Semua style default sudah optimal untuk desktop */
+  .hero-section {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+  
+  .why-us {
+    padding: 80px 20px;
+  }
+  
+  .why-us-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ===== DESKTOP SANGAT BESAR - 1400px ke atas ===== */
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  .logo {
+    font-size: 2.6em;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.4rem;
+  }
+  
+  .hero-section {
+    gap: 50px;
+  }
+  
+  .why-us {
+    padding: 90px 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.6em;
+  }
+}
+
+/* ===== LANDSCAPE ORIENTATION UNTUK MOBILE ===== */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+    padding: 20px 15px;
+  }
+  
+  .hero-content {
+    transform: translateY(0);
+  }
+  
+  .pre-header {
+    margin-top: 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  
+  .hero-buttons {
+    margin-top: 15px;
+    gap: 10px;
+  }
+  
+  .why-us {
+    padding: 30px 15px;
+  }
+  
+  .cta-section {
+    padding: 30px 15px;
+  }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .header {
+    box-shadow: none;
+    position: static;
+  }
+  
+  .hero-section {
+    min-height: auto;
+    page-break-after: always;
+  }
+  
+  .cta-section {
+    background: #f5f5f5 !important;
+    color: #333 !important;
+  }
+  
+  .footer {
+    background: #fff !important;
+    color: #333 !important;
+  }
+  
+  .btn, .btn-konsultasi {
+    border: 1px solid #333 !important;
+    background: #fff !important;
+    color: #333 !important;
+  }
+  
+  .modal-overlay {
+    display: none !important;
+  }
+}
+
+/* ===== HIGH DPI / RETINA DISPLAYS ===== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+  
+  /* Optimasi untuk layar retina */
+  .feature-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  }
+  
+  .feature-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .header {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+}

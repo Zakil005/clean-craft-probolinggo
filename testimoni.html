@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Clean Craft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="testimoni.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Clean Craft.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="testimoni.html">Testimoni</a></li>
+            </ul>
+            <div class="header-actions">
+                <a href="#" class="love-icon-container" aria-label="Lihat Layanan yang Disukai">
+                    <i class="fas fa-heart"></i>
+                    <span class="love-count">0</span>
+                </a>
+                <a href="https://wa.me/6282337645011?text=Permisi%20Kak,%20saya%20ingin%20bertanya%20mengenai%20layanan%20cuci%20sepatu.%20Apakah%20bisa%20dibantu%20untuk%20informasinya%3F" class="btn-konsultasi">Konsultasi</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Testimoni Pelanggan</h2>
+                    <p>Dengarkan cerita kepuasan dari pelanggan setia kami. Kepuasan mereka adalah motivasi kami untuk terus memberikan layanan terbaik.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stats-item">
+                        <h3>500+</h3>
+                        <p>Sepatu Selesai</p>
+                    </div>
+                    <div class="stats-item">
+                        <h3>98%</h3>
+                        <p>Kepuasan Pelanggan</p>
+                    </div>
+                    <div class="stats-item">
+                        <h3>4.9</h3>
+                        <p>Rating Rata-rata</p>
+                    </div>
+                    <div class="stats-item">
+                        <h3>200+</h3>
+                        <p>Pelanggan Setia</p>
+                    </div>
+                </div>
+        </section>
+
+        
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Ulasan Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <button class="add-review-btn" id="addReviewBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            Tambah Ulasan
+        </button>
+        <div class="review-form-container" id="reviewFormContainer">
+            <h2 class="form-title">Berikan Ulasan Anda</h2>
+            <form id="reviewForm">
+                <input type="hidden" id="reviewId" name="reviewId">
+                <div class="input-group"><label for="nama">Nama</label><input type="text" id="nama" name="nama" required></div>
+                <div class="input-group"><label for="deskripsi">Deskripsi Ulasan</label><textarea id="deskripsi" name="deskripsi" required></textarea></div>
+                <div class="input-group">
+                    <label for="layanan">Layanan</label>
+                    <select id="layanan" name="layanan" required>
+                        <option value="" disabled selected>Pilih Jenis Layanan</option>
+                        <option value="Fast Clean">Fast Clean</option>
+                        <option value="Deep Clean">Deep Clean</option>
+                        <option value="Perawatan Khusus">Perawatan Khusus</option>
+                        <option value="Repaint">Repaint</option>
+                        <option value="Sepatu & Sandal">Sepatu & Sandal</option>
+                        <option value="Helm">Helm</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 bintang">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 bintang">★</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 bintang">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 bintang">★</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 bintang">★</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">Kirim Ulasan</button>
+            </form>
+        </div>
+
+        <div class="submitted-reviews-container" id="submittedReviewsContainer"></div>
+    </div>
+
+    <audio id="submitSound" src="https://www.soundjay.com/human/sounds/applause-2.mp3" preload="auto"></audio>
+    <audio id="trumpetSound" src="https://www.soundjay.com/misc/sounds/magic-chime-01.mp3" preload="auto"></audio>
+    <audio id="editSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+    <audio id="deleteSound" src="https://www.soundjay.com/animals/sounds/cat_crying_1.mp3" preload="auto"></audio>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const addReviewBtn = document.getElementById('addReviewBtn');
+        const reviewFormContainer = document.getElementById('reviewFormContainer');
+        const reviewForm = document.getElementById('reviewForm');
+        const submittedReviewsContainer = document.getElementById('submittedReviewsContainer');
+        const submitSound = document.getElementById('submitSound');
+        const trumpetSound = document.getElementById('trumpetSound');
+        const editSound = document.getElementById('editSound');
+        const deleteSound = document.getElementById('deleteSound');
+
+        addReviewBtn.addEventListener('click', () => {
+            reviewForm.reset();
+            document.getElementById('reviewId').value = '';
+            document.getElementById('submitBtn').textContent = 'Kirim Ulasan';
+            reviewFormContainer.classList.toggle('open');
+        });
+
+        reviewForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const reviewData = Object.fromEntries(formData.entries());
+            const reviewId = reviewData.reviewId;
+            
+            if (reviewId) {
+                const cardToUpdate = document.querySelector(`.review-card[data-id="${reviewId}"]`);
+                if (cardToUpdate) {
+                    updateReviewCard(cardToUpdate, reviewData);
+                    editSound.play();
+                }
+            } else {
+                playSubmitSound();
+                createReviewCard(reviewData);
+            }
+            reviewFormContainer.classList.remove('open');
+            this.reset();
+        });
+
+        function playSubmitSound() {
+            submitSound.currentTime = 0;
+            trumpetSound.currentTime = 0;
+            submitSound.play();
+            trumpetSound.play();
+        }
+
+        function generateStars(rating) {
+            let stars = '';
+            for (let i = 0; i < 5; i++) {
+                stars += i < rating ? '★' : '☆';
+            }
+            return stars;
+        }
+
+        function createReviewCard(data) {
+            const now = new Date();
+            const uniqueId = now.getTime();
+            const formattedDate = `${now.getDate()} ${now.toLocaleString('id-ID', { month: 'long' })} ${now.getFullYear()}, ${now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })}`;
+            const card = document.createElement('div');
+            card.className = 'review-card';
+            card.dataset.id = uniqueId;
+            card.dataset.nama = data.nama;
+            card.dataset.deskripsi = data.deskripsi;
+            card.dataset.layanan = data.layanan;
+            card.dataset.rating = data.rating;
+            card.innerHTML = `
+                <div class="review-card-header">
+                    <div class="review-card-name">${data.nama}</div>
+                    <div class="review-card-stars">${generateStars(data.rating)}</div>
+                </div>
+                <div class="review-card-description">${data.deskripsi}</div>
+                <div class="review-card-footer">
+                    <div class="review-card-info">
+                        <strong>Layanan:</strong> ${data.layanan}<br>
+                        <em>${formattedDate}</em>
+                    </div>
+                    <div class="review-card-actions">
+                        <button class="edit-btn" title="Edit Ulasan"><svg fill="#555" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"/></svg></button>
+                        <button class="delete-btn" title="Hapus Ulasan"><svg fill="#d11a2a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg></button>
+                    </div>
+                </div>`;
+            submittedReviewsContainer.prepend(card);
+        }
+
+        function updateReviewCard(card, data) {
+            card.dataset.nama = data.nama;
+            card.dataset.deskripsi = data.deskripsi;
+            card.dataset.layanan = data.layanan;
+            card.dataset.rating = data.rating;
+            card.querySelector('.review-card-name').textContent = data.nama;
+            card.querySelector('.review-card-stars').innerHTML = generateStars(data.rating);
+            card.querySelector('.review-card-description').textContent = data.deskripsi;
+            card.querySelector('.review-card-info').innerHTML = `
+                <strong>Layanan:</strong> ${data.layanan}<br>
+                <em>${card.querySelector('.review-card-info em').textContent}</em>`;
+        }
+
+        submittedReviewsContainer.addEventListener('click', function(event) {
+            const card = event.target.closest('.review-card');
+            if (!card) return;
+
+            if (event.target.closest('.delete-btn')) {
+                if (confirm('Apakah Anda yakin ingin menghapus ulasan ini?')) {
+                    deleteSound.play();
+                    card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateX(20px)';
+                    setTimeout(() => card.remove(), 300);
+                }
+            }
+
+            if (event.target.closest('.edit-btn')) {
+                document.getElementById('reviewId').value = card.dataset.id;
+                document.getElementById('nama').value = card.dataset.nama;
+                document.getElementById('deskripsi').value = card.dataset.deskripsi;
+                document.getElementById('layanan').value = card.dataset.layanan;
+                document.querySelector(`.star-rating input[name="rating"][value="${card.dataset.rating}"]`).checked = true;
+                document.getElementById('submitBtn').textContent = 'Update Ulasan';
+                reviewFormContainer.classList.add('open');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+    });
+
+
+    
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="cta-section">
+            <h2>Saatnya Memperhatikan Kebersihan Sepatu Anda</h2>
+            <p>Jangan ragu-ragu sampai sepatu Anda kotor dan bau. Hubungi kami sekarang untuk layanan cuci sepatu terbaik</p>
+            <div class="cta-buttons">
+                <a href="layanan.html" class="btn btn-primary">Pesan Sekarang</a>
+                <a href="https://wa.me/6282337645011?text=Permisi%20Kak,%20saya%20ingin%20bertanya%20mengenai%20layanan%20cuci%20sepatu.%20Apakah%20bisa%20dibantu%20untuk%20informasinya%3F" class="btn-konsultasi">Konsultasi</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">Clean Craft</div>
+                <p>Layanan profesional cuci sepatu dan helm dengan kualitas terbaik. Penanganan ahli profesional membuat sepatu Anda kembali bersih dan segar.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/cleancraft.id/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@cleancraft.id" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/6282337645011" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Sumber Taman Indah, Wonoasih, Probolinggo, Jawa Timur</p>
+                <p><i class="fas fa-phone-alt"></i> 082337945011</p>
+                <p><i class="fas fa-clock"></i> Setiap hari, 08.00-23.00 WIB</p>
+                <p><i class="fab fa-instagram"></i> cleancraft.id</p>
+                <p><i class="fab fa-tiktok"></i> cleancraft.id</p>
+            </div>
+            <div class="footer-column">
+                <h3>Layanan Kami</h3>
+                <ul>
+                    <li>Cuci Sepatu (Fast & Deep Clean)</li>
+                    <li>Perawatan Suede</li>
+                    <li>Repaint & Unyellowing</li>
+                    <li>Cuci Helm</li>
+                    <li>Perawatan Sepatu Formal</li>
+                    <li>Konsultasi Gratis</li>
+                    <li>Antar - Jemput</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Clean Craft. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <div id="love-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Favorit Saya</h3>
+                <button class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <div id="order-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Isi Data Anda</h3>
+                <button class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="order-form">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                    
+                    <label for="layanan-dipilih">Layanan yang Anda Pilih:</label>
+                    <textarea id="layanan-dipilih" rows="3" disabled></textarea>
+
+                    <label for="tanggal-pesan">Tanggal Pesan:</label>
+                    <input type="text" id="tanggal-pesan" disabled>
+
+                    <button type="submit" class="btn btn-primary">Pesan Sekarang</button>
+                </form>
+                <div id="confirmation-message" style="display:none;">
+                    <h4>Pesanan Anda Berhasil!</h4>
+                    <p>Kode unik Anda adalah:</p>
+                    <h4 id="unique-code"></h4>
+                    <p>Silakan gunakan kode ini saat Anda datang ke toko kami. Mohon hubungi kami melalui WhatsApp.</p>
+                    <a href="#" id="whatsapp-link" class="btn btn-primary" target="_blank">Hubungi via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="layanan.js"></script>
+</body>
+</html>

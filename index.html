@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Clean Craft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="jihhhr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+    <nav class="navbar">
+        <a href="index\\\.html" class="logo">Clean Craft.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+        </ul>
+        <div class="header-actions">
+            <a href="#" class="love-icon-container" aria-label="Lihat Layanan yang Disukai">
+                <i class="fas fa-heart"></i>
+                <span class="love-count">0</span>
+            </a>
+            <a href="https://wa.me/6282337645011?text=Permisi%20Kak,%20saya%20ingin%20bertanya%20mengenai%20layanan%20cuci%20sepatu.%20Apakah%20bisa%20dibantu%20untuk%20informasinya%3F" class="btn-konsultasi">Konsultasi</a>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <style>
+        /* Pengaturan Dasar Halaman */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f8f9fa; /* Warna latar sedikit abu-abu seperti contoh */
+            color: #212529;
+        }
+
+        /* WADAH UTAMA HERO SECTION */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px; /* Jarak antara teks dan gambar */
+            overflow: hidden; /* Mencegah grafis latar keluar dari section */
+            flex-wrap: wrap-reverse; /* Agar gambar di atas teks di layar kecil */
+        }
+
+        /* KOLOM KIRI (Teks dan Tombol) */
+        .hero-content {
+            flex: 1; /* Mengambil ruang fleksibel */
+            min-width: 320px; /* Lebar minimum */
+            max-width: 500px;
+            z-index: 2; /* Memastikan teks di atas grafis latar */
+        }
+
+        .pre-header {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #4CAF50; /* Warna hijau brand */
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .hero-content .description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #6c757d;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px; /* Jarak antar tombol */
+            align-items: center;
+        }
+
+        /* Tombol Umum */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px; /* Membuat bentuk pil */
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        /* Tombol Utama (Lihat Layanan) */
+        .btn-primary {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+
+        /* Tombol Kedua (Promo Kilat) */
+        .btn-secondary {
+            background-color: #fff;
+            color: #4CAF50;
+            border: 2px solid #e0e0e0;
+        }
+        .btn-secondary:hover {
+            background-color: #f1f1f1;
+            border-color: #ccc;
+            transform: translateY(-3px);
+        }
+
+        /* KOLOM KANAN (Gambar) */
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            position: relative; /* Diperlukan untuk menampung grafis latar */
+            text-align: center;
+        }
+
+        /* KUNCI UTAMA: Grafis Latar Belakang Biru */
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            width: 150%; /* Dibuat lebih besar dari gambar */
+            height: 150%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, #e0f1ff 30%, rgba(255,255,255,0) 70%);
+            z-index: 1; /* Diletakkan di belakang gambar */
+        }
+
+        /* Gambar Model */
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            position: relative; /* Diperlukan agar berada di atas grafis latar */
+            z-index: 2; /* Diletakkan di depan grafis latar */
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="pre-header">Layanan Profesional</p>
+            <h1>Sepatu Bersih, Penampilan Sempurna</h1>
+            <p class="description">Percayakan perawatan sepatu kesayangan Anda kepada Clean Craft. Dengan layanan profesional dan teknologi terdepan, kami akan mengembalikan sepatu Anda seperti baru kembali.</p>
+            <div class="hero-buttons">
+                <a href="layanan.html" class="btn btn-primary">Lihat Layanan</a>
+                <a href="promo.html" class="btn btn-secondary">Promo Kilat</a>
+            </div>
+        </div>
+                
+        <div class="hero-image">
+            <img src="d.png" alt="Model memegang sepatu bersih">
+        </div>
+    </section>
+                
+        <section class="why-us">
+            <div class="section-header">
+                <h2>Mengapa Memilih Clean Craft?</h2>
+                <p>Kami berkomitmen memberikan layanan terbaik dengan standar kualitas tinggi</p>
+            </div>
+            <div class="why-us-grid">
+                <div class="feature-card">
+                    <i class="fas fa-gem icon"></i>
+                    <h3>Kualitas Premium</h3>
+                    <p>Menggunakan produk dan teknik berkualitas tinggi dan profesional</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock icon"></i>
+                    <h3>Pengerjaan Cepat</h3>
+                    <p>Layanan fast clean 1-2 hari, dengan tracking real-time</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle icon"></i>
+                    <h3>Garansi Kepuasan</h3>
+                    <p>Tidak puas? Kami akan mengerjakan ulang tanpa biaya tambahan</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star icon"></i>
+                    <h3>Berpengalaman</h3>
+                    <p>Telah menangani ribuan sepatu dengan berbagai jenis bahan</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Siap Membuat Sepatu Anda Bersih?</h2>
+            <p>Hubungi kami sekarang dan rasakan perbedaannya. Konsultasi gratis tersedia!</p>
+            <div class="cta-buttons">
+                <a href="layanan.html" class="btn btn-primary">Pesan Sekarang</a>
+                <a href="https://wa.me/6282337645011?text=Permisi%20Kak,%20saya%20ingin%20bertanya%20mengenai%20layanan%20cuci%20sepatu.%20Apakah%20bisa%20dibantu%20untuk%20informasinya%3F" class="btn-konsultasi">Konsultasi</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">Clean Craft</div>
+                <p>Layanan profesional cuci sepatu dan helm dengan kualitas terbaik. Penanganan ahli profesional membuat sepatu Anda kembali bersih dan segar.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/cleancraft.id/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@cleancraft.id" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/6282337645011" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Sumber Taman Indah, Wonoasih, Probolinggo, Jawa Timur</p>
+                <p><i class="fas fa-phone-alt"></i> 082337945011</p>
+                <p><i class="fas fa-clock"></i> Senin - Minggu, 08.00-22.00 WIB</p>
+                <p><i class="fab fa-instagram"></i> cleancraft.id</p>
+                <p><i class="fab fa-tiktok"></i> cleancraft.id</p>
+            </div>
+            <div class="footer-column">
+                <h3>Layanan Kami</h3>
+                <ul>
+                    <li>Cuci Sepatu (Fast & Deep Clean)</li>
+                    <li>Perawatan Suede</li>
+                    <li>Repaint & Unyellowing</li>
+                    <li>Cuci Helm</li>
+                    <li>Perawatan Sepatu Formal</li>
+                    <li>Konsultasi Gratis</li>
+                    <li>Antar - Jemput</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Clean Craft. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <div id="love-modal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Favorit Saya</h3>
+            <button class="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            </div>
+    </div>
+</div>
+
+<div id="order-modal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Isi Data Anda</h3>
+            <button class="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="order-form">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="telepon">Nomor Telepon:</label>
+                <input type="tel" id="telepon" name="telepon" required>
+                
+                <label for="layanan-dipilih">Layanan yang Anda Pilih:</label>
+                <textarea id="layanan-dipilih" rows="3" disabled></textarea>
+
+                <label for="tanggal-pesan">Tanggal Pesan:</label>
+                <input type="text" id="tanggal-pesan" disabled>
+
+                <button type="submit" class="btn btn-primary">Pesan Sekarang</button>
+            </form>
+            <div id="confirmation-message" style="display:none;">
+                <h4>Pesanan Anda Berhasil!</h4>
+                <p>Kode unik Anda adalah:</p>
+                <h4 id="unique-code"></h4>
+                <p>Silakan gunakan kode ini saat Anda datang ke toko kami. Mohon hubungi kami melalui WhatsApp.</p>
+                <a href="#" id="whatsapp-link" class="btn btn-primary" target="_blank">Hubungi via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="layanan.js"></script>
+</body>
+</html>
+

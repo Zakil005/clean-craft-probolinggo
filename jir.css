@@ -1,0 +1,179 @@
+/* Pengaturan Dasar Halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; /* Warna latar sedikit abu-abu seperti contoh */
+    color: #212529;
+}
+
+/* WADAH UTAMA HERO SECTION */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Jarak antara teks dan gambar */
+    overflow: hidden; /* Mencegah grafis latar keluar dari section */
+    flex-wrap: wrap-reverse; /* Agar gambar di atas teks di layar kecil */
+}
+
+/* KOLOM KIRI (Teks dan Tombol) */
+.hero-content {
+    flex: 1; /* Mengambil ruang fleksibel */
+    min-width: 320px; /* Lebar minimum */
+    max-width: 500px;
+    z-index: 2; /* Memastikan teks di atas grafis latar */
+}
+
+.pre-header {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4CAF50; /* Warna hijau brand */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.hero-content .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #6c757d;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px; /* Jarak antar tombol */
+    align-items: center;
+}
+
+/* Tombol Umum */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px; /* Membuat bentuk pil */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Tombol Utama (Lihat Layanan) */
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Tombol Kedua (Promo Kilat) */
+.btn-secondary {
+    background-color: #fff;
+    color: #4CAF50;
+    border: 2px solid #e0e0e0;
+}
+.btn-secondary:hover {
+    background-color: #f1f1f1;
+    border-color: #ccc;
+    transform: translateY(-3px);
+}
+
+/* KOLOM KANAN (Gambar) */
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    position: relative; /* Diperlukan untuk menampung grafis latar */
+    text-align: center;
+}
+
+/* KUNCI UTAMA: Grafis Latar Belakang Biru */
+.hero-image::before {
+    content: '';
+    position: absolute;
+    width: 150%; /* Dibuat lebih besar dari gambar */
+    height: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #e0f1ff 30%, rgba(255,255,255,0) 70%);
+    z-index: 1; /* Diletakkan di belakang gambar */
+}
+
+/* Gambar Model */
+/* KOLOM KANAN (Gambar) */
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    position: relative; /* Properti ini wajib ada */
+    text-align: center;
+
+    /* TAMBAHKAN BARIS INI UNTUK MENAIKKAN GAMBAR */
+    bottom: 50px; 
+}
+
+
+
+/* 1. GAYA DASAR (UNTUK HP / MOBILE-FIRST) */
+/* CSS ini berlaku untuk semua ukuran layar kecuali diubah oleh media query. */
+
+.container {
+    display: flex;
+    flex-direction: column; /* Menumpuk konten ke bawah pada HP */
+}
+
+.konten-utama {
+    order: 1; /* Urutan pertama */
+}
+
+.sidebar {
+    order: 2; /* Urutan kedua */
+    background-color: #f0f0f0;
+}
+
+
+/* 2. GAYA UNTUK TABLET (dan lebih besar) */
+/* Aturan ini aktif jika lebar layar minimal 768px. */
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Konten dan sidebar menjadi berdampingan */
+    }
+
+    .konten-utama {
+        flex: 3; /* Mengambil 3 bagian ruang */
+    }
+    
+    .sidebar {
+        flex: 1; /* Mengambil 1 bagian ruang */
+    }
+}
+
+
+/* 3. GAYA UNTUK DESKTOP (dan lebih besar) */
+/* Aturan ini aktif jika lebar layar minimal 1024px. */
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px; /* Membuat font sedikit lebih besar di desktop */
+    }
+    
+    .container {
+        max-width: 1200px; /* Memberi batas lebar maksimal agar tidak terlalu lebar */
+        margin: 0 auto;   /* Menengahkan layout di layar besar */
+    }
+}
